@@ -1,0 +1,22 @@
+# SQL Meets Vectors — requirements
+# Install all at once: pip install -r requirements.txt
+#
+# PyTorch note: the CPU-only build is smaller (~250MB vs 2GB for GPU).
+# If you only need embeddings on a laptop or desktop, use the CPU build:
+#   pip install torch --index-url https://download.pytorch.org/whl/cpu
+# Then run: pip install -r requirements.txt
+
+# Data handling
+pandas>=2.1.0
+numpy>=1.26.0
+
+# SQL Server connectivity
+# Requires ODBC Driver 18 for SQL Server installed separately.
+# It is bundled with SQL Server Developer Edition on Windows.
+# Linux / macOS: https://learn.microsoft.com/en-us/sql/connect/odbc/download-odbc-driver-for-sql-server
+pyodbc>=5.0.0
+
+# Local embedding model (no API key required)
+# Downloads all-MiniLM-L6-v2 (~80MB) on first run and caches locally.
+sentence-transformers>=3.0.0
+torch>=2.0.0

@@ -1,0 +1,15 @@
+venv/
+embeddings/
+
+__pycache__/
+*.pyc
+.env
+
+.vscode/
+.ipynb_checkpoints/
+
+data/
+backup/
+
+*.npy
+*.parquet
